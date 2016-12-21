@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>jsonPTest</title>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $.ajax({
+        url:'http://demo.yilelink.com/demopage/monitor_api/get_monitor_data.php',
+        type:'GET',
+        crossDomain: true,
+        dataType:'jsonp',
+        jsonp:'callback',
+        jsonpCallback:'jsonPHandler',
+        success:function(response){
+          alert('got it');
+        },
+        error:function(e){
+          alert(e);
+        }
+      })
+    })
+  </script>
+</head>
+<body>
+  <div id="data_container"></div>
+</body>
+</html>

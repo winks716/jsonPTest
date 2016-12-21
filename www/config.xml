@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget id="com.uatme.jsonptest" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+  <name>jsonPTest</name>
+  <description>jsonp test</description>
+  <author href="www.uatme.com" email="winks716@163.com">U@ME Studio</author>
+  <content src="index.html" />
+  <access origin="*" />
+  <platform name="android">
+  </platform>
+  <platform name="ios">
+  </platform>
+</widget>
